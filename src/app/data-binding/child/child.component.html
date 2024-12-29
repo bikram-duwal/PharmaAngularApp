@@ -1,0 +1,18 @@
+<h2>Child Component</h2>
+
+<div class="child">
+  <p><strong>My Name is </strong>{{c_name}} </p>
+  <h6>Submitted Name with child Namelist</h6>
+  <ul>
+    <li *ngFor="let item of names">{{item}}</li>
+  </ul>
+
+
+<h5>Send Name to Parent</h5>
+<label for="name-input">Name: </label>
+  <input #newNameC type="text" id="name-input" placeholder="Enter a name for Parent" >
+  <button (click)="addNewNameC(newNameC.value)" >Send to Parent</button>
+
+</div>
+
+ 

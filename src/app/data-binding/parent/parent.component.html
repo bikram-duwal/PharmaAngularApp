@@ -1,0 +1,20 @@
+
+
+
+<div class="d-flex">
+  <div class="parent">
+    <h2>This is a parent component with forms</h2>
+  <label for="name-input">Name: </label>
+  <input #newName type="text" id="name-input" placeholder="Enter a name for Child" >
+  <button (click)="addName(newName.value)">Send</button>
+    <h4>Names already in parent and also from Child</h4>
+    <ul>
+      <li *ngFor="let item of p_names">{{item}}</li>
+    </ul>
+  </div>
+   <div>
+    <app-child [c_name]="currentName" [names]="p_names" (c_newNameEvent)="addName($event)"></app-child>
+   </div>
+</div>
+ 
+
