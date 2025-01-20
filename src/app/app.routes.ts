@@ -9,7 +9,7 @@ export const routes: Routes = [
   {path: 'parent-data', component:ParentComponent},
   {path: 'child-data', component:ChildComponent},
   {path: 'calc-app',component: CalculatorComponent},
-  {path: 'template-driven-form',component: TemplateDrivenFormComponent},
+  {path: 'tdf',component: TemplateDrivenFormComponent},
   {path: '',component: CalculatorComponent}
 
 
